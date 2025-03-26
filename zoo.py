@@ -14,9 +14,15 @@ class Cat(Animal):
     def make_sound(self):
         print("Meow! I'm", self.name)
 
+class Cow(Animal):
+    def make_sound(self):
+        print("Moo! I'm", self.name)
+
 if __name__ == "__main__":
     dog = Dog("Rex", "Canine")
     cat = Cat("Mittens", "Feline")
+    cow = Cow("Spotty","Mammal")
 
     dog.make_sound()
     cat.make_sound()
+    cow.make_sound()
